@@ -1,7 +1,9 @@
 {
-  "contract": "0xf1fd63cdb29900a0035cdc8196e56207e087407f",
-  "name": "Damn It Official",
-  "total_mints": 748,
-  "twitter": "https://twitter.com/DamnNFTOfficial",
-  "opensea": "https://opensea.io/collection/damnit?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW"
+  "contract": "0xd5ef5438928e81a43a49c95c1b875aae832c980f",
+  "name": "On-Chain Alphabet",
+  "total_mints": 349,
+  "twitter": "https://twitter.com/nounsfes",
+  "discord": "https://discord.gg/4JGURQujXK",
+  "opensea": "https://opensea.io/collection/on-chain-alphabet?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW",
+  "mint_url": "https://mint.fun/0xd5ef5438928e81a43a49c95c1b875aae832c980f"
 }

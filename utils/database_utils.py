@@ -15,6 +15,7 @@ class NftData:
     name = ''
     total_mints = 0
     twitter = ''
+    discord = ''
     opensea = ''
     mint_url = ''
 
@@ -23,12 +24,12 @@ class NftData:
         self.mint_url = 'https://mint.fun/' + contract
 
     def to_str(self):
-        return ' 合约地址：%s\n\n 项目名称：%s\n\n mint总计：%d\n\n twitter：%s\n\n opensea：%s\n\n mint_url：%s' % (
-            self.contract, self.name, self.total_mints, self.twitter, self.opensea, self.mint_url)
+        return ' 合约地址：%s\n\n 项目名称：%s\n\n mint总计：%d\n\n twitter：%s\n\n discord：%s\n\n opensea：%s\n\n mint_url：%s' % (
+            self.contract, self.name, self.total_mints, self.twitter, self.discord, self.opensea, self.mint_url)
 
     def to_map(self):
         return {'contract': self.contract, 'name': self.name, 'total_mints': self.total_mints,
-                'twitter': self.twitter, 'opensea': self.opensea, 'mint_url': self.mint_url}
+                'twitter': self.twitter, 'discord': self.discord, 'opensea': self.opensea, 'mint_url': self.mint_url}
 
 
 nft_list = [0]
@@ -57,6 +58,7 @@ def nft_select_new():
         nft.name = maps['name']
         nft.total_mints = maps['total_mints']
         nft.twitter = maps['twitter']
+        nft.discord = maps['discord']
         nft.opensea = maps['opensea']
         nft_list[0] = nft
     return nft

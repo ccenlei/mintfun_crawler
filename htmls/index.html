@@ -84,12 +84,14 @@
                     } else {
                         //获取body里的标签,进行赋值
                         twitter = data.twitter
+                        discord = data.discord
                         opensea = data.opensea
                         mint_url = data.mint_url
                         str = "合约地址：" + data.contract +
                               "</br></br>项目名称：" + data.name +
                               "</br></br>mint总计：" + data.total_mints +
                               "</br></br>twitter：<a href=" + twitter + " target='_blank'> -> click <- </a>" +
+                              "</br></br>discord：<a href=" + discord + " target='_blank'> -> click <- </a>" +
                               "</br></br>opensea：<a href=" + opensea + " target='_blank'> -> click <- </a>" +
                               "</br></br>mint：<a href=" + mint_url + " target='_blank'> -> click <- </a>"
                         $("#contract").html(str);
