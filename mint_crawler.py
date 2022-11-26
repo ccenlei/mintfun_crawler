@@ -42,12 +42,15 @@ def feature_crawler(mail: MailSender):
     urls = collection['urls']
     total_mints = collection['totalMints']
     twitter = ''
+    discord = ''
     opensea = ''
     for urll in urls:
         types = urll['type']
         url = urll['url']
         if 'twitter' == types:
             twitter = url
+        elif 'discord' == types:
+            discord = url
         elif 'opensea' == types:
             opensea = url
         else:
@@ -56,6 +59,7 @@ def feature_crawler(mail: MailSender):
     nft_data.name = name
     nft_data.total_mints = total_mints
     nft_data.twitter = twitter
+    nft_data.discord = discord
     nft_data.opensea = opensea
     mail.mail(feature_title, nft_data.to_str())
     database_utils.nft_insert(nft_data)
